@@ -1,0 +1,37 @@
+{
+  "name": "fly-transcription-testscripts",
+  "description": "Project to contain all the test scripts for the main fly-transcription project",
+  "version": "0.1.0",
+  "homepage": "https://github.com/codingbash/fly-transcription-testscripts",
+  "author": {
+    "name": "codingbash",
+    "email": "codingbash@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/codingbash/fly-transcription-testscripts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codingbash/fly-transcription-testscripts/issues"
+  },
+  "license": "Apache-2.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha",
+    "build": "mkdirp build && browserify -r ./:fly-transcription-testscripts -o build/testscripts.js",
+    "build-browser": "npm run build",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {
+    "imjs": "^3.15.1"
+  },
+  "devDependencies": {
+    "mkdirp": "^0.5.0",
+    "browserify": "6.x",
+    "chai": "1.x",
+    "mocha": "1.x"
+  },
+  "keywords": [
+    "biojs"
+  ]
+}

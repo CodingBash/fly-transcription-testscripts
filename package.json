@@ -23,7 +23,12 @@
     "prepublish": "npm run build"
   },
   "dependencies": {
-    "imjs": "^3.15.1"
+    "async": "^2.1.4",
+    "compute-pcorr": "^1.0.0",
+    "imjs": "^3.15.1",
+    "promis": "^1.1.4",
+    "promise": "^7.1.1",
+    "util": "^0.10.3"
   },
   "devDependencies": {
     "mkdirp": "^0.5.0",
